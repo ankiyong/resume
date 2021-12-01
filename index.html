@@ -6,6 +6,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>안기용 Portfolio</title>
+    <style>
+    .warp{
+
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:center;
+        height:200px;
+        width:920px;
+        margin-left:500px
+
+    }
+    .layer_1{
+        width:300px;
+        height:80px;
+        display:block;
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        }
+    .image{
+        width:30px;
+        height:30px;
+    }
+    .info{
+        width:220px
+        margin-left:10px;
+    }
+    .info_1{
+        height:40px;
+    }
+    .info_2{
+        height:40px;
+    }
+     .info_box{
+        width:50px;
+     }
+     .projects_container{
+
+     }
+     .pj_info1{
+        width:100px;
+     }
+     .pj_info2{
+        width:410px;
+     }
+    </style>
+
+<!--       .me{-->
+<!--        width:35px;-->
+<!--        height:35px;-->
+<!--       }-->
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
@@ -64,35 +116,85 @@
         <!-- End #lead-down -->
     </div>
     <!-- End #lead -->
-
+<!--데이터 파이프라인에 대한 관심이 깊으며 여러 기술을 통해 다양한 데이터를 자유롭게 수집할 수 있는 데이터 엔지니어가 되고 싶습니다.-->
     <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h2 class="heading">About Me</h2>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                        데이터 파이프라인에 대한 관심이 깊으며 여러 기술을 통해 다양한 데이터를 자유롭게 수집할 수 있는 데이터 엔지니어가 되고 싶습니다.
-                    </p>
-                </div>
-            </div>
-        </div>
+<div>
+                <h2 class="heading">About Me</h2>
     </div>
+                <div class="warp">
+
+                        <div class="layer_1">
+                            <div class="info_box"><img  class="image" src="images/human.png"></div>
+                            <div class="info">
+                                <div class="info_1">이름</div>
+                                <div class="info_2">안기용</div>
+                            </div>
+
+                        </div>
+                        <div class="layer_1">
+                            <div class="info_box"><img  class="image" src="images/calender.png"></div>
+                            <div class="info">
+                                <div class="info_1">생년월일</div>
+                                <div class="info_2">1993.9.13</div>
+                            </div>
+                        </div>
+                        <div class="layer_1">
+                            <div class="info_box"><img  class="image" src="images/loc.png"></div>
+                            <div class="info">
+                                <div class="info_1">주소지</div>
+                                <div class="info_2">서울특별시 구로구</div>
+                            </div>
+                        </div>
+                        <div class="layer_1">
+                            <div class="info_box"><img  class="image" src="images/phone.png"></div>
+                            <div class="info">
+                                <div class="info_1">연락처</div>
+                                <div class="info_2">010-2290-7044</div>
+                            </div>
+                        </div>
+                        <div class="layer_1">
+                            <div class="info_box"><img  class="image" src="images/mail.png"></div>
+                            <div class="info">
+                                <div class="info_1">이메일</div>
+                                <div class="info_2">pop2413@gmail.com</div>
+                            </div>
+                        </div>
+                        <div class="layer_1">
+                            <div class="info_box"><img  class="image" src="images/hat.png"></div>
+                            <div class="info">
+                                <div class="info_1">학력</div>
+                                <div class="info_2">공주대학교</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+<!--                </div>-->
+<!--                <div style="background-color:red">-->
+<!--d-->
+<!--                </div>-->
+            </div>
+
     <!-- End #about -->
+  <div id="skills">
+        <h2 class="heading">Skills</h2>
 
-    <div id="experience" class="background-alt">
-        <h2 class="heading">Experience</h2>
-<!--        <div id="experience-timeline">-->
-            <div data-date="2016 – September 2019">
-                <h3>P.A.N</h3>
-                <h4>대표</h4>
-                <p>
-                    청소년 문화 예체능 교육 단체를 설립하여 운영한 경험이 있습니다.
-                </p>
-            </div>
-
+      <div><img src="images/skills.png" width="1280px;" height="730px;"></div>
     </div>
+    <!-- End #skills -->
+
+<!--    <div id="experience" class="background-alt">-->
+<!--        <h2 class="heading">Experience</h2>-->
+<!--&lt;!&ndash;        <div id="experience-timeline">&ndash;&gt;-->
+<!--            <div data-date="2016 – September 2019">-->
+<!--                <h3>P.A.N</h3>-->
+<!--                <h4>대표</h4>-->
+<!--                <p>-->
+<!--                    청소년 문화 예체능 교육 단체를 설립하여 운영한 경험이 있습니다.-->
+<!--                </p>-->
+<!--            </div>-->
+
+<!--    </div>-->
     <!-- End #experience -->
 
     <div id="education">
@@ -129,15 +231,44 @@
 
     <div id="projects" class="background-alt">
         <h2 class="heading">Projects</h2>
-        <div class="container">
-            <div class="row">
+        <div class="projects_container">
+<!--            <div class="row">-->
                 <div class="project shadow-large">
                     <div class="project-image" style="background-color:black">
-                        <img src="images/daycar.png" style="width:300px;height:120px"/>
+                        <img src="images/gif.gif" style="width:500px;height:500px"/>
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
-                        <h3>중고차 가격 예측 서비스</h3>
+                        <div class="topic">
+                        <h3>머신러닝 기반 서비스 구현 프로젝트</h3>
+                        <p>
+                            머신러닝 기반의 중고차 가격 예측 서비스의 데이터 파이프라인 구축
+                        </p>
+                            </div>
+                       <div style="display:flex;        flex-direction: row;        flex-wrap: wrap; ">
+                           <div class="pj_info1">주요기능</div>
+                           <div class="pj_info2">MachineLearning 기반의 중고차 가격 예측</div>
+                           <div class="pj_info1">GitHub</div>
+                           <div class="pj_info2"><a href="https://github.com/ankiyong/day_car">https://github.com/ankiyong/day_car</a></div>
+                           <div class="pj_info1">도메인</div>
+                           <div class="pj_info2"><a href="#">http://day-car.com</a></div>
+
+                       </div>
+<!--                        <a href="https://github.com/ankiyong/day_car">View Project</a>-->
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+                <!-- End .project -->
+            </div>
+        <div class="projects_container">
+<!--            <div class="row">-->
+                <div class="project shadow-large">
+                    <div class="project-image" style="background-color:black">
+                        <img src="images/seoul.png" style="width:500px;height:500px"/>
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>문제해결을 위한 머신러닝 학습 데이터 구축 프로젝트</h3>
                         <p>
                             머신러닝 기반의 중고차 가격 예측 서비스의 데이터 파이프라인 구축
                         </p>
@@ -145,80 +276,41 @@
                     </div>
                     <!-- End .project-info -->
                 </div>
-                <!-- End .project -->
-
-                <div class="project shadow-large">
-                    <div class="project-image" >
-                        <img src="images/seoul.png" style="width:300px;height:120px" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>서울시 치안 분석 시각화 프로젝트</h3>
-                        <p>
-                            서울시의 치안 관련 요소를 통해 지역구 별 치안 상태를 시각화 하여 나타냄
-                        </p>
-                        <a href="https://github.com/ankiyong/safety_project">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-                           <div class="project shadow-large">
-                    <div class="project-image" style="background-color:black">
-                        <img src="images/travel.png" style="width:300px;height:120px" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>관광객 감소 요인 시각화 프로젝트</h3>
-                        <p>
-                            주요 관광도시의 관광객 감소 요인을 시각화 하여 나타냄
-                        </p>
-                        <a href="https://github.com/ankiyong/first_project">View Project</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-            </div>
         </div>
-    </div>
+        <div class="projects_container">
+<!--            <div class="row">-->
+                <div class="project shadow-large">
+                    <div class="project-image" style="background-color:black">
+                        <img src="images/gif.gif" style="width:500px;height:500px"/>
+                    </div>
+                    <!-- End .project-image -->
+                    <div class="project-info">
+                        <h3>데이터 시각화 프로젝트</h3>
+                        <p>
+                            머신러닝 기반의 중고차 가격 예측 서비스의 데이터 파이프라인 구축
+                        </p>
+                        <a href="https://github.com/ankiyong/day_car">View Project</a>
+                    </div>
+                    <!-- End .project-info -->
+                </div>
+        </div>
+        </div>
+
     <!-- End #projects -->
 
-    <div id="skills">
-        <h2 class="heading">Skills</h2>
-        <ul>
-            <li>Python</li>
-            <li>Hadoop</li>
-            <li>Spark</li>
-            <li>django</li>
-            <li>MySql</li>
-            <li>Oracle</li>
-            <li>Linux</li>
-            <li>Vmware</li>
-            <li>AWS</li>
-            <li>GitHub</li>
-            <li>Slack</li>
-            <li>Pandas</li>
-            <li>Selenium</li>
-            <li>Bs4</li>
-            <li>Matplotlib</li>
-            <li>Folium</li>
-            <li>Seaborn</li>
 
-        </ul>
-    </div>
-    <!-- End #skills -->
-
-    <div id="contact">
-        <h2>Get in Touch</h2>
-        <div id="contact-form">
-            <form method="POST" action="https://formspree.io/email@email.com">
-                <input type="hidden" name="_subject" value="Contact request from personal website" />
-                <input type="email" name="_replyto" placeholder="Your email" required>
-                <textarea name="message" placeholder="Your message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </div>
-        <!-- End #contact-form -->
-    </div>
+<!--    <div id="contact">-->
+<!--        <h2>Get in Touch</h2>-->
+<!--        <div id="contact-form">-->
+<!--            <form method="POST" action="https://formspree.io/email@email.com">-->
+<!--                <input type="hidden" name="_subject" value="Contact request from personal website" />-->
+<!--                <input type="email" name="_replyto" placeholder="Your email" required>-->
+<!--                <textarea name="message" placeholder="Your message" required></textarea>-->
+<!--                <button type="submit">Send</button>-->
+<!--            </form>-->
+<!--        </div>-->
+<!--        &lt;!&ndash; End #contact-form &ndash;&gt;-->
+<!--    </div>-->
     <!-- End #contact -->
 
     <footer>
@@ -226,7 +318,7 @@
             <div class="row">
                 <div class="col-sm-5 copyright">
                     <p>
-                        Copyright &copy; 2020 YOUR NAME
+                        Copyright &copy; 2021 An Ki Yong
                     </p>
                 </div>
                 <div class="col-sm-2 top">
