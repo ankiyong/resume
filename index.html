@@ -53,8 +53,43 @@
         width:410px;
      }
      .topic{
-        margin-top:0px;
+        margin-top:100px;
      }
+      .skill_warp{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap:20px;
+        width:950px;
+        margin:0 auto;
+     }
+     .skill_stack{
+
+     padding : 15px;
+     width : 280px;
+     display:block;
+    background-color:white;
+     border-radius : 1rem;
+     box-shadow: 1rem 1rem 1rem 0 rgb(68 68 68 / 20%);
+}
+.skill_stack:nth-child(6) {
+	/* 1번 라인에서 2칸 */
+	grid-column: 1 / span 2;
+	/* 1번 라인에서 3칸 */
+	grid-row: 1 / span 2;
+}
+.skill_stack:nth-child(1) {
+	grid-column: 2 / span 1;
+	grid-row: 1 / span 1;
+}
+.skill_name{
+    font-weight:bold;
+    font-size:25px;
+
+}
+.skill_image{
+    margin-top:20px;
+}
+
     </style>
 
 <!--       .me{-->
@@ -82,21 +117,18 @@
             <li>
                 <a href="#about">About</a>
             </li>
+
             <li>
-                <a href="#experience">Experience</a>
+                <a href="#education">Experience&Education</a>
             </li>
-            <li>
-                <a href="#education">Education</a>
+                <li>
+                <a href="#skills">Skills</a>
             </li>
             <li>
                 <a href="#projects">Projects</a>
             </li>
-            <li>
-                <a href="#skills">Skills</a>
-            </li>
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
+
+           
         </ul>
     </header>
     <!-- End header -->
@@ -185,7 +217,7 @@
          <div class="education-block">
             <h3 style="font-weight:bold;">K-digital 데이터 사이언스/엔지니어 전문가 양성과정</h3>
             <span class="education-date">2021.06 - 2021.11</span>
-            <br><h4>교육과정을 이수하며 데이터 엔지니어 관련 기술을 익히고 다수의 팀 프로젝트를 진행했습니다.</h4>
+            <br><h4>교육과정을 이수하며 데이터 엔지니어 관련 기술을 익히고 다양한 팀 프로젝트를 진행했습니다.</h4>
 
         </div>
         <div class="education-block">
@@ -204,7 +236,17 @@
   <div id="skills">
         <h2 class="heading">Skills</h2>
 
-      <div><img src="images/skills.png" width="1280px;" height="730px;"></div>
+      <div class="skill_warp">
+          <div class="skill_stack"><div class="skill_name">Back-end</div><img class="skill_image" src="images/python.png" style="width:250px;"></div>
+          <div class="skill_stack"><div class="skill_name">Tools</div><img class="skill_image" src="images/tools.png"></div>
+          <div class="skill_stack"><div class="skill_name">Framework</div><img class="skill_image" src="images/frame.png"></div>
+          <div class="skill_stack"><div class="skill_name">Database</div><img class="skill_image" src="images/data.png"></div>
+          <div class="skill_stack"><div class="skill_name">System</div><img class="skill_image" src="images/system.png"></div>
+          <div class="skill_stack"><div class="skill_name">Libaray</div><img class="skill_image" src="images/lib.png"></div>
+          <div class="skill_stack"><div class="skill_name">Front-end</div><img class="skill_image" src="images/front.png" style="width:250px;"></div>
+
+
+      </div>
     </div>
     <!-- End #skills -->
 
@@ -236,7 +278,7 @@
                     <div class="project-info">
                         <div class="topic">
                         <h2>머신러닝 기반 서비스 구현 프로젝트</h2>
-                        <div style="margin-top:150px;">
+                        <div style="margin-top:70px;">
                             <p>
 
                         </p>
@@ -249,6 +291,8 @@
                            <div class="pj_info2"><a href="https://github.com/ankiyong/day_car">https://github.com/ankiyong/day_car</a></div>
                            <div class="pj_info1">도메인</div>
                            <div class="pj_info2"><a href="#">http://day-car.com</a></div>
+                             <div class="pj_info1">Dashboard</div>
+                           <div class="pj_info2"><a href="http://13.209.117.128:8000/dash">http://13.209.117.128:8000/dash</a></div>
 
                        </div>
 <!--                        <a href="https://github.com/ankiyong/day_car">View Project</a>-->
@@ -267,7 +311,7 @@
                     <div class="project-info">
                         <div class="topic">
                         <h2>문제해결을 위한 학습데이터 구축 프로젝트</h2>
-                        <div style="margin-top:150px;">
+                        <div style="margin-top:70px;">
                             <p>
 
                         </p>
@@ -280,6 +324,8 @@
                            <div class="pj_info2"><a href="https://github.com/ankiyong/safety_project">https://github.com/ankiyong/safety_project</a></div>
                            <div class="pj_info1">도메인</div>
                            <div class="pj_info2"><a href="http://13.209.117.128:8000">http://13.209.117.128:8000</a></div>
+                          <div class="pj_info1">Dashboard</div>
+                           <div class="pj_info2"><a href="http://13.209.117.128:8000/dash">http://13.209.117.128:8000/dash</a></div>
 
                        </div>
 <!--                        <a href="https://github.com/ankiyong/day_car">View Project</a>-->
@@ -291,14 +337,14 @@
         <div class="projects_container">
 <!--            <div class="row">-->
                 <div class="project shadow-large">
-                    <div class="project-image" style="background-color:black">
-                        <img src="images/seoul.png" style="width:500px;height:300px"/>
+                    <div class="project-image" style="background-color:white">
+                        <img src="images/first.png" style="width:500px;height:300px"/>
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
                         <div class="topic">
                         <h2>데이터 시각화 프로젝트</h2>
-                        <div style="margin-top:150px;">
+                        <div style="margin-top:70px;">
                             <p>
 
                         </p>
@@ -310,7 +356,7 @@
                            <div class="pj_info1">GitHub</div>
                            <div class="pj_info2"><a href="https://github.com/ankiyong/first_project">https://github.com/ankiyong/first_project</a></div>
                            <div class="pj_info1">도메인</div>
-                           <div class="pj_info2"><a href="#">http://day-car.com</a></div>
+                           <div class="pj_info2"><a href="#">없음</a></div>
 
                        </div>
 <!--                        <a href="https://github.com/ankiyong/day_car">View Project</a>-->
@@ -318,10 +364,10 @@
                     <!-- End .project-info -->
                 </div>
         </div>
-        </div>
+
 
     <!-- End #projects -->
-     <h4 style="width:300px;margin-left:420px;">개인 프로젝트</h4>
+     <h4 style="width:300px;margin-left:300px;">개인 프로젝트</h4>
         <div class="projects_container">
 <!--            <div class="row">-->
                 <div class="project shadow-large">
@@ -332,7 +378,7 @@
                     <div class="project-info">
                         <div class="topic">
                         <h2>일자리 MetaSearch 사이트 제작</h2>
-                        <div style="margin-top:150px;">
+                        <div style="margin-top:70px;">
                             <p>
 
                         </p>
@@ -340,11 +386,11 @@
                             </div>
                        <div style="display:flex;flex-direction:row;flex-wrap:wrap;">
                            <div class="pj_info1">주요기능</div>
-                           <div class="pj_info2">실시간 MetaSearch를 통해 원하는 일자리 정보를 확인할 수 있는 사이트 입니다.</div>
+                           <div class="pj_info2">MetaSearch를 통해 원하는 일자리 정보를 실시간으로 확인할 수 있는 사이트 입니다.</div>
                            <div class="pj_info1">GitHub</div>
-                           <div class="pj_info2"><a href="https://github.com/ankiyong/day_car">https://github.com/ankiyong/day_car</a></div>
+                           <div class="pj_info2"><a href="https://github.com/ankiyong/Scrap_Job">https://github.com/ankiyong/Scrap_Job</a></div>
                            <div class="pj_info1">도메인</div>
-                           <div class="pj_info2"><a href="#">http://day-car.com</a></div>
+                           <div class="pj_info2"><a href="https://github.com/ankiyong/Scrap_Job">https://github.com/ankiyong/Scrap_Job</a></div>
 
                        </div>
 <!--                        <a href="https://github.com/ankiyong/day_car">View Project</a>-->
@@ -357,13 +403,13 @@
 <!--            <div class="row">-->
                 <div class="project shadow-large">
                     <div class="project-image" style="background-color:black">
-                        <img src="images/seoul.png" style="width:500px;height:300px"/>
+                        <img src="images/banner.png" style="width:500px;height:300px"/>
                     </div>
                     <!-- End .project-image -->
                     <div class="project-info">
                         <div class="topic">
                         <h2>포트폴리오 웹 페이지 제작</h2>
-                        <div style="margin-top:150px;">
+                        <div style="margin-top:70px;">
                             <p>
 
                         </p>
@@ -373,9 +419,9 @@
                            <div class="pj_info1">주요내용</div>
                            <div class="pj_info2">포트폴리오 용도로 제작한 웹 사이트입니다.</div>
                            <div class="pj_info1">GitHub</div>
-                           <div class="pj_info2"><a href="https://github.com/ankiyong/safety_project">https://github.com/ankiyong/safety_project</a></div>
+                           <div class="pj_info2"><a href="https://github.com/ankiyong/resumet">https://github.com/ankiyong/resume</a></div>
                            <div class="pj_info1">도메인</div>
-                           <div class="pj_info2"><a href="#">http://day-car.com</a></div>
+                           <div class="pj_info2"><a href="http://ankiyong.github.io/resume">http://ankiyong.github.io/resume</a></div>
 
                        </div>
 <!--                        <a href="https://github.com/ankiyong/day_car">View Project</a>-->
@@ -384,7 +430,8 @@
                 </div>
                 <!-- End .project -->
             </div>
-
+</div>
+    </div>
     <!-- End #projects -->
 
 <!--    <div id="contact">-->
