@@ -48,9 +48,10 @@
      }
      .pj_info1{
         width:100px;
+        font-weight: 600;
      }
      .pj_info2{
-        width:410px;
+        width:500px;
      }
      .topic{
         margin-top:100px;
@@ -90,12 +91,18 @@
     margin-top:20px;
 }
 
+.role_list{
+    float:left;
+    margin-left:40px;
+}
+
+.site{
+    float:left;
+    margin-left:40px;
+}
     </style>
 
-<!--       .me{-->
-<!--        width:35px;-->
-<!--        height:35px;-->
-<!--       }-->
+
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
@@ -137,7 +144,7 @@
         <div id="lead-content">
             <h1>안기용</h1>
             <h2>Data Engineer Portfolio</h2>
-            <a href="안기용_Resume_2.pdf" class="btn-rounded-white">Download Resume</a>
+            <a href="안기용_자기소개서.pdf" class="btn-rounded-white">Download Resume</a>
         </div>
         <!-- End #lead-content -->
 
@@ -271,7 +278,7 @@
         <div class="projects_container">
 <!--            <div class="row">-->
                 <div class="project shadow-large">
-                    <div class="project-image" style="background-color:black">
+                    <div class="project-image">
                         <img src="images/gif.gif" style="width:500px;height:300px"/>
                     </div>
                     <!-- End .project-image -->
@@ -285,14 +292,27 @@
                             </div>
                             </div>
                        <div style="display:flex;flex-direction:row;flex-wrap:wrap;">
-                           <div class="pj_info1">주요기능</div>
-                           <div class="pj_info2">MachineLearning 기반의 중고차 가격 예측</div>
+
+
+                           <div class="pj_info1">Description</div>
+                           <div class="pj_info2">Machine Learning 기반의 중고차 가격 정보 제공 서비스 구현</div>
+                           <div class="pj_info1">Skill</div>
+                           <div class="pj_info2" style="margin-left:15px;">Python,Django,BeautifulSoup,Pandas,AWS,Mysql,Hadoop,Spark<br>
+                           Ubuntu,CSS,HTML</div>
+                           <div class="pj_info1">Role</div>
+                           <div class="pj_info2"><ul style="list-style:none;padding-left:0px;">
+                               <li class="role_list">- Encar,Kcar 사이트에서 중고차 데이터 크롤링</li>
+                               <li class="role_list">- Spark,Pandas를 사용하여 원하는 형태로 데이터 전처리 및 가공</li>
+                               <li class="role_list">- Mysql에 Database 구축 및 설계</li>
+                               <li class="role_list">- Python을 사용하여 데이터 파이프라인 구축</li>
+                               <li class="role_list">- Django 기반의 웹 페이지 구축</li>
+                               <li class="role_list">- AWS 개발환경 구축(hadoop,spark 등 설치)</li>
+                           </ul></div>
                            <div class="pj_info1">GitHub</div>
-                           <div class="pj_info2"><a href="https://github.com/ankiyong/day_car">https://github.com/ankiyong/day_car</a></div>
-                           <div class="pj_info1">도메인</div>
-                           <div class="pj_info2"><a href="http://52.78.91.136:8000">http://52.78.91.136:8000</a></div>
-                             <div class="pj_info1">Dashboard</div>
-                           <div class="pj_info2"><a href="http://52.78.91.136:8000/cars">http://52.78.91.136:8000/cars</a></div>
+                           <div class="pj_info2"><a class="site" href="https://github.com/ankiyong/day_car">https://github.com/ankiyong/day_car</a></div>
+                           <div class="pj_info1">LINK</div>
+                           <div class="pj_info2"><a class="site" href="http://52.78.91.136:8000">http://52.78.91.136:8000</a></div>
+
 
                        </div>
 <!--                        <a href="https://github.com/ankiyong/day_car">View Project</a>-->
@@ -304,7 +324,7 @@
         <div class="projects_container">
 <!--            <div class="row">-->
                 <div class="project shadow-large">
-                    <div class="project-image" style="background-color:black">
+                    <div class="project-image" >
                         <img src="images/seoul.png" style="width:500px;height:300px"/>
                     </div>
                     <!-- End .project-image -->
@@ -318,19 +338,29 @@
                             </div>
                             </div>
                        <div style="display:flex;flex-direction:row;flex-wrap:wrap;">
-                           <div class="pj_info1">주요내용</div>
-                           <div class="pj_info2">서울시 지역구별 치안수준 분석을 위한 <br>학습데이터 구축 및 시각화 프로젝트입니다.</div>
+                      <div class="pj_info1">Description</div>
+                           <div class="pj_info2">서울시 지역구별 치안수준 분석을 위한 학습데이터 구축 및 시각화</div>
+                           <div class="pj_info1">Skill</div>
+                           <div class="pj_info2" style="margin-left:15px;">Python,Django,Pandas,AWS,Mysql,Hadoop,Spark,Ubuntu<br>
+                           BeautifulSoup,Selenium,CSS,HTML</div>
+                           <div class="pj_info1">Role</div>
+                           <div class="pj_info2"><ul style="list-style:none;padding-left:0px;">
+                               <li class="role_list">- 빅데이터포털,서울 열린데이터광장 등의 Open API를 사용하여 치안 관련 공공 데이터 수집</li>
+                               <li class="role_list">- Selenium을 사용하여 치안 인프라 데이터 크롤링</li>
+                               <li class="role_list">- Spark,Pandas를 사용하여 원하는 형태로 데이터 전처리 및 가공</li>
+                               <li class="role_list">- Matplotlib,Folium을 사용하여 수집 정보 시각화</li>
+                               <li class="role_list">- Mysql에 Database 구축 및 설계</li>
+                               <li class="role_list">- Django 기반의 웹 페이지 구축</li>
+                               <li class="role_list">- AWS 개발환경 구축(hadoop,spark 등 설치)</li>
+                           </ul></div>
                            <div class="pj_info1">GitHub</div>
-                           <div class="pj_info2"><a href="https://github.com/ankiyong/safety_project">https://github.com/ankiyong/safety_project</a></div>
-                           <div class="pj_info1">도메인</div>
-                           <div class="pj_info2"><a href="http://13.209.117.128:8000">http://13.209.117.128:8000</a></div>
-                          <div class="pj_info1">Dashboard</div>
-                           <div class="pj_info2"><a href="http://13.209.117.128:8000/dash">http://13.209.117.128:8000/dash</a></div>
+                           <div class="pj_info2"><a class="site" href="https://github.com/ankiyong/safety_project">https://github.com/ankiyong/safety_project</a></div>
+                           <div class="pj_info1">LINK</div>
+                           <div class="pj_info2"><a class="site" href="http://13.209.117.128:8000">http://13.209.117.128:8000</a></div>
 
                        </div>
-<!--                        <a href="https://github.com/ankiyong/day_car">View Project</a>-->
                     </div>
-                    <!-- End .project-info -->
+
                 </div>
                 <!-- End .project -->
             </div>
@@ -350,13 +380,21 @@
                         </p>
                             </div>
                             </div>
-                       <div style="display:flex;flex-direction:row;flex-wrap:wrap;">
-                           <div class="pj_info1">주요내용</div>
-                           <div class="pj_info2">공공데이터를 활용한 데이터 시각화프로젝트 입니다.</div>
+                        <div style="display:flex;flex-direction:row;flex-wrap:wrap;">
+                      <div class="pj_info1">Description</div>
+                           <div class="pj_info2">관광객 수 증감에 대한 원인 분석 및 시각화</div>
+                           <div class="pj_info1">Skill</div>
+                           <div class="pj_info2" >Python,Pandas,BeautifulSoup,Selenium,Matplotlib,Folium</div>
+                           <div class="pj_info1">Role</div>
+                           <div class="pj_info2"><ul style="list-style:none;padding-left:0px;">
+                               <li class="role_list">- 공공데이터포털의 Open API를 사용하여 관광 인프라 관련 공공 데이터 수집</li>
+                               <li class="role_list">- Selenium을 사용하여 naver,google 등의 사이트에서 주요 관광지역 인프라 데이터 크롤링</li>
+                               <li class="role_list">- Pandas를 사용하여 원하는 형태로 데이터 전처리 및 가공</li>
+                               <li class="role_list">- Matplotlib,Folium을 사용하여 수집 정보 시각화</li>
+                                </ul></div>
                            <div class="pj_info1">GitHub</div>
-                           <div class="pj_info2"><a href="https://github.com/ankiyong/first_project">https://github.com/ankiyong/first_project</a></div>
-                           <div class="pj_info1">도메인</div>
-                           <div class="pj_info2"><a href="#">없음</a></div>
+                           <div class="pj_info2"><a class="site" href="https://github.com/ankiyong/first_project">https://github.com/ankiyong/first_project</a></div>
+
 
                        </div>
 <!--                        <a href="https://github.com/ankiyong/day_car">View Project</a>-->
@@ -371,7 +409,7 @@
         <div class="projects_container">
 <!--            <div class="row">-->
                 <div class="project shadow-large">
-                    <div class="project-image" style="background-color:black">
+                    <div class="project-image" >
                         <img src="images/main.png" style="width:500px;height:300px"/>
                     </div>
                     <!-- End .project-image -->
@@ -402,7 +440,7 @@
         <div class="projects_container">
 <!--            <div class="row">-->
                 <div class="project shadow-large">
-                    <div class="project-image" style="background-color:black">
+                    <div class="project-image" >
                         <img src="images/banner.png" style="width:500px;height:300px"/>
                     </div>
                     <!-- End .project-image -->
